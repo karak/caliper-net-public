@@ -55,7 +55,7 @@ namespace ImsGlobal.Caliper.Protocol {
 
 				} catch( HttpRequestException ex ) {
 					var msg = String.Format( "Failed to send data: {0}", ex.Message );
-					Trace.WriteLine( msg );
+					Debug.WriteLine( msg );
 					return false;
 				}
 			}
